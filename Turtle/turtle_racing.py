@@ -4,9 +4,9 @@ from random import randint
 window=turtle.Screen()
 window.bgcolor('white')
 turtles=[]
-k=0
+k = 0
 
-colors=['red','green','blue','violet','purple','orange','darkblue','black']
+colors=['red', 'green', 'blue', 'violet', 'purple', 'orange', 'darkblue', 'black']
 for i in range(6):
     lines=turtle.Turtle()
     lines.hideturtle()
@@ -15,12 +15,12 @@ for i in range(6):
     lines.pendown()
     lines.goto(k,300)
     lines.write(str(i*10)+'\n')
-    k+=50
+    k += 50
 
 
-k=-100
+k =- 100
 for i in range(8):
-    t=turtle.Turtle('turtle')
+    t = turtle.Turtle('turtle')
     turtles.append(t)
     t.penup()
     t.hideturtle()
@@ -33,7 +33,7 @@ for i in range(8):
     t.left(180)
     t.goto(0,k)
     t.right(-180)
-    k+=50
+    k += 50
 
 
 
@@ -44,8 +44,8 @@ while not cond:
         t.forward(speed/5)
         if t.xcor()>250:
             t.shapesize(2)
-            t.write('       WINNER')
-            cond=True
+            t.write('\t\tWINNER')
+            cond = True
             break
 
 turtle.mainloop()
